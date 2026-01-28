@@ -1,0 +1,60 @@
+name: ReportSystem
+version: '1.0.0'
+main: com.reportsystem.ReportSystem
+api-version: '1.21'
+author: Lolka12321
+description: Advanced report system with Discord integration
+
+commands:
+  report:
+    description: Main report system command
+    usage: |
+      /report - Create a new report
+      /report reload - Reload configuration (admin)
+      /report help - Show help
+    aliases: [rep]
+    permission: reportsystem.report
+
+  reports:
+    description: View your reports
+    usage: /reports
+    permission: reportsystem.reports
+
+  unfreeze:
+    description: Unfreeze a player after check
+    usage: /unfreeze <player>
+    permission: reportsystem.admin
+
+permissions:
+  reportsystem.*:
+    description: Grants all ReportSystem permissions
+    default: op
+    children:
+      reportsystem.admin: true
+      reportsystem.report: true
+      reportsystem.reports: true
+
+  reportsystem.admin:
+    description: Access to administrative commands
+    default: op
+    children:
+      reportsystem.admin.reload: true
+      reportsystem.admin.stats: true
+      reportsystem.report: true
+      reportsystem.reports: true
+
+  reportsystem.admin.reload:
+    description: Reload plugin configuration
+    default: op
+
+  reportsystem.admin.stats:
+    description: View report statistics
+    default: op
+
+  reportsystem.report:
+    description: Create reports
+    default: true
+
+  reportsystem.reports:
+    description: View own reports
+    default: true

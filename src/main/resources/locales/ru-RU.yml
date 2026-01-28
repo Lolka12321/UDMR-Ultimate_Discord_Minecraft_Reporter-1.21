@@ -1,0 +1,89 @@
+# Русская локализация для ReportSystem - Весенняя палитра
+
+# Префикс с весенним градиентом
+prefix: "<gradient:#FFB7C5:#FFDAB9>[Жалоба]</gradient>"
+
+# Формат даты
+date-format: "dd.MM.yyyy HH:mm"
+
+# Сообщения создания жалобы
+report-start: "<gradient:#98D8C8:#6BCF7E>Начинаем процесс создания жалобы...</gradient>"
+question-nickname: "<gradient:#FFB7C5:#FFDAB9>Введите ник нарушителя:</gradient>"
+question-reason: "<gradient:#DDA0DD:#E6E6FA>Укажите причину жалобы:</gradient>"
+question-comment: "<gradient:#98FB98:#ADFF2F>Добавьте дополнительные детали (или напишите 'пропустить'):</gradient>"
+
+# Сообщения подтверждения
+confirm-header: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+confirm-violator: "<gradient:#B4E7CE:#95E1D3>Нарушитель:</gradient> &f{violator}"
+confirm-reason: "<gradient:#F8C8DC:#FADCE1>Причина:</gradient> &f{reason}"
+confirm-comment: "<gradient:#C5E1A5:#AED581>Комментарий:</gradient> &f{comment}"
+confirm-footer: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+confirm-title: "<gradient:#FFB7C5:#DDA0DD>Подтвердить жалобу?</gradient>"
+confirm-prompt: ""
+confirm-button-yes: "<gradient:#98FB98:#7FFF00>&l[ДА]</gradient>"
+confirm-button-no: "<gradient:#FFB6C1:#FF69B4>&l[НЕТ]</gradient>"
+confirm-instruction: ""
+
+# Уже создаётся жалоба
+already-creating-header: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+already-creating-title: "<gradient:#FFDAB9:#FFB6C1>&lВнимание</gradient>"
+already-creating-prompt: "<gradient:#DDA0DD:#E6E6FA>Вы уже создаёте жалобу. Отменить текущую?</gradient>"
+already-creating-button-yes: "<gradient:#98FB98:#7FFF00>&l[ДА]</gradient>"
+already-creating-button-no: "<gradient:#FFB6C1:#FF69B4>&l[НЕТ]</gradient>"
+already-creating-footer: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+
+# Сообщения успеха/ошибки
+report-success: "<gradient:#98FB98:#7FFF00>Жалоба #{id} успешно отправлена!</gradient>"
+report-cancelled: "<gradient:#FFB6C1:#FFC0CB>Создание жалобы отменено.</gradient>"
+report-timeout: "<gradient:#FFDAB9:#FFE4B5>Время создания жалобы истекло.</gradient>"
+report-system-unavailable: "<gradient:#FFB6C1:#FFC0CB>На данный момент жалобы не работают. Повторите попытку позже.</gradient>"
+cannot-report-self: "<gradient:#FFB6C1:#FFC0CB>Вы не можете пожаловаться на самого себя!</gradient>"
+player-not-found: "<gradient:#FFDAB9:#FFE4B5>Игрок не найден на сервере.</gradient>"
+max-reports-reached: "<gradient:#FFB6C1:#FFC0CB>Вы достигли максимального количества активных жалоб ({max}).</gradient>"
+no-reports: "<gradient:#DDA0DD:#E6E6FA>У вас пока нет жалоб.</gradient>"
+
+# Сообщения о проверке
+report-reviewed: "<gradient:#98FB98:#7FFF00>Ваша жалоба #{id} была рассмотрена:</gradient> &f{action}"
+
+# Названия статусов с весенними градиентами
+status-pending: "<gradient:#FFDAB9:#FFE4B5>Ожидает</gradient>"
+status-approved: "<gradient:#98FB98:#7FFF00>Одобрено</gradient>"
+status-rejected: "<gradient:#FFB6C1:#FF69B4>Отклонено</gradient>"
+
+# Команды администратора
+no-permission: "<gradient:#FFB6C1:#FFC0CB>У вас нет прав для использования этой команды.</gradient>"
+admin-reload: "<gradient:#98FB98:#7FFF00>Конфигурация и локализация перезагружены!</gradient>"
+admin-language-changed: "<gradient:#DDA0DD:#E6E6FA>Язык изменён на:</gradient> &f{language}"
+admin-stats: "<gradient:#FFB7C5:#FFDAB9>&l=== Статистика жалоб ===</gradient>\n<gradient:#B4E7CE:#95E1D3>Всего жалоб:</gradient> &f{total}\n<gradient:#98FB98:#7FFF00>Одобрено:</gradient> &f{approved}\n<gradient:#FFB6C1:#FF69B4>Отклонено:</gradient> &f{rejected}\n<gradient:#FFDAB9:#FFE4B5>На рассмотрении:</gradient> &f{pending}"
+
+# Сообщения Discord
+discord:
+  new-report-title: "Новая жалоба"
+  reporter: "Отправитель"
+  violator: "Нарушитель"
+  violator-uuid: "UUID нарушителя"
+  reason: "Причина"
+  comment: "Комментарий"
+  status: "Статус"
+  status-pending: "На рассмотрении"
+  status-approved: "Одобрено"
+  status-rejected: "Отклонено"
+  created: "Создано"
+  reviewed-by: "Проверено"
+  admin-comment: "Комментарий администратора"
+  comment-left-by: "Комментарий оставил"
+
+  button-approve: "Одобрить"
+  button-reject: "Отклонить"
+  button-check: "Проверка"
+  button-comment: "Добавить комментарий"
+
+  modal-title: "Добавить комментарий к жалобе #{id}"
+  modal-input-label: "Ваш комментарий"
+  modal-input-placeholder: "Введите комментарий здесь..."
+
+  report-not-found: "Жалоба не найдена!"
+  already-reviewed: "Эта жалоба уже была рассмотрена!"
+  approved-success: "Жалоба #{id} одобрена!"
+  rejected-success: "Жалоба #{id} отклонена!"
+  comment-added: "Комментарий добавлен к жалобе #{id}!"

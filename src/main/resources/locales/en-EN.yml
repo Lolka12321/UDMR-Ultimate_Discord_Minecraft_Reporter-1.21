@@ -1,0 +1,89 @@
+# English Localization for ReportSystem - Spring Palette
+
+# Prefix with spring gradient
+prefix: "<gradient:#FFB7C5:#FFDAB9>[Report]</gradient>"
+
+# Date format
+date-format: "MM/dd/yyyy HH:mm"
+
+# Report creation messages
+report-start: "<gradient:#98D8C8:#6BCF7E>Starting report creation process...</gradient>"
+question-nickname: "<gradient:#FFB7C5:#FFDAB9>Enter the violator's nickname:</gradient>"
+question-reason: "<gradient:#DDA0DD:#E6E6FA>Enter the reason for the report:</gradient>"
+question-comment: "<gradient:#98FB98:#ADFF2F>Add additional details (or type 'skip' to skip):</gradient>"
+
+# Confirmation messages
+confirm-header: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+confirm-violator: "<gradient:#B4E7CE:#95E1D3>Violator:</gradient> &f{violator}"
+confirm-reason: "<gradient:#F8C8DC:#FADCE1>Reason:</gradient> &f{reason}"
+confirm-comment: "<gradient:#C5E1A5:#AED581>Comment:</gradient> &f{comment}"
+confirm-footer: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+confirm-title: "<gradient:#FFB7C5:#DDA0DD>Confirm your report?</gradient>"
+confirm-prompt: ""
+confirm-button-yes: "<gradient:#98FB98:#7FFF00>&l[YES]</gradient>"
+confirm-button-no: "<gradient:#FFB6C1:#FF69B4>&l[NO]</gradient>"
+confirm-instruction: ""
+
+# Already creating prompt
+already-creating-header: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+already-creating-title: "<gradient:#FFDAB9:#FFB6C1>&lNotice</gradient>"
+already-creating-prompt: "<gradient:#DDA0DD:#E6E6FA>You're already creating a report. Cancel current one?</gradient>"
+already-creating-button-yes: "<gradient:#98FB98:#7FFF00>&l[YES]</gradient>"
+already-creating-button-no: "<gradient:#FFB6C1:#FF69B4>&l[NO]</gradient>"
+already-creating-footer: "<gradient:#E0BBE4:#D4A5A5>&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+
+# Success/Error messages
+report-success: "<gradient:#98FB98:#7FFF00>Report #{id} successfully submitted!</gradient>"
+report-cancelled: "<gradient:#FFB6C1:#FFC0CB>Report creation cancelled.</gradient>"
+report-timeout: "<gradient:#FFDAB9:#FFE4B5>Report creation timed out.</gradient>"
+report-system-unavailable: "<gradient:#FFB6C1:#FFC0CB>Report system is currently unavailable. Please try again later.</gradient>"
+cannot-report-self: "<gradient:#FFB6C1:#FFC0CB>You cannot report yourself!</gradient>"
+player-not-found: "<gradient:#FFDAB9:#FFE4B5>Player not found on the server.</gradient>"
+max-reports-reached: "<gradient:#FFB6C1:#FFC0CB>You have reached the maximum number of active reports ({max}).</gradient>"
+no-reports: "<gradient:#DDA0DD:#E6E6FA>You have no reports yet.</gradient>"
+
+# Report review messages
+report-reviewed: "<gradient:#98FB98:#7FFF00>Your report #{id} has been reviewed:</gradient> &f{action}"
+
+# Status names with spring gradients
+status-pending: "<gradient:#FFDAB9:#FFE4B5>Pending</gradient>"
+status-approved: "<gradient:#98FB98:#7FFF00>Approved</gradient>"
+status-rejected: "<gradient:#FFB6C1:#FF69B4>Rejected</gradient>"
+
+# Admin commands
+no-permission: "<gradient:#FFB6C1:#FFC0CB>You don't have permission to use this command.</gradient>"
+admin-reload: "<gradient:#98FB98:#7FFF00>Configuration and localization reloaded!</gradient>"
+admin-language-changed: "<gradient:#DDA0DD:#E6E6FA>Language changed to:</gradient> &f{language}"
+admin-stats: "<gradient:#FFB7C5:#FFDAB9>&l=== Report Statistics ===</gradient>\n<gradient:#B4E7CE:#95E1D3>Total reports:</gradient> &f{total}\n<gradient:#98FB98:#7FFF00>Approved:</gradient> &f{approved}\n<gradient:#FFB6C1:#FF69B4>Rejected:</gradient> &f{rejected}\n<gradient:#FFDAB9:#FFE4B5>Pending:</gradient> &f{pending}"
+
+# Discord messages
+discord:
+  new-report-title: "New Report"
+  reporter: "Reporter"
+  violator: "Violator"
+  violator-uuid: "Violator UUID"
+  reason: "Reason"
+  comment: "Comment"
+  status: "Status"
+  status-pending: "Under Review"
+  status-approved: "Approved"
+  status-rejected: "Rejected"
+  created: "Created"
+  reviewed-by: "Reviewed by"
+  admin-comment: "Admin Comment"
+  comment-left-by: "Comment by"
+
+  button-approve: "Approve"
+  button-reject: "Reject"
+  button-check: "Check"
+  button-comment: "Add Comment"
+
+  modal-title: "Add Comment to Report #{id}"
+  modal-input-label: "Your Comment"
+  modal-input-placeholder: "Enter your comment here..."
+
+  report-not-found: "Report not found!"
+  already-reviewed: "This report has already been reviewed!"
+  approved-success: "Report #{id} approved!"
+  rejected-success: "Report #{id} rejected!"
+  comment-added: "Comment added to report #{id}!"

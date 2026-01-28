@@ -1,0 +1,22 @@
+# ReportSystem Configuration
+
+# Language (en-EN, ru-RU)
+language: "en-EN"
+
+# Discord settings
+discord:
+  # Use Discord bot (recommended)
+  use-bot: true
+  # Discord bot token (get from https://discord.com/developers/applications)
+  bot-token: "YOUR_BOT_TOKEN_HERE"
+  # Channel ID for sending reports
+  channel-id: "YOUR_CHANNEL_ID_HERE"
+
+# Report settings
+reports:
+  # Maximum active reports per player
+  max-active-reports: 5
+  # Form timeout in seconds (0 = no timeout)
+  form-timeout: 300
+  # Report history limit
+  history-limit: 18
